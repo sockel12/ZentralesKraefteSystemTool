@@ -12,9 +12,10 @@ namespace ZKSTLib
             this.force1 = f1;
             this.angle2 = angle2;
             this.angle3 = angle3;
+            Berechnen();
         }
 
-        public void Berechnen()
+        private void Berechnen()
         {
             double f1x, f1y;
             double f2x, f2y;

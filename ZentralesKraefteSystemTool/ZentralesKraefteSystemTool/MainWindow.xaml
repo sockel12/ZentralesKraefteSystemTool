@@ -8,19 +8,20 @@
         Title="Zentrales Kraftsystem Tool by Benjamin Appel" Height="381" Width="633" ResizeMode="NoResize">
     <Grid>
         <Label Content="Zentrales Kraftsystem Tool" HorizontalAlignment="Left" FontSize="18" Margin="10,10,0,0" VerticalAlignment="Top" Height="30" Width="240" FontWeight="Bold"/>
-        <TextBox x:Name="TB_Winkel1" HorizontalAlignment="Left" Height="23" Margin="130,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
-        <TextBox x:Name="TB_Kraft1" HorizontalAlignment="Left" Height="23" Margin="130,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
-        <TextBox x:Name="TB_Winkel2" HorizontalAlignment="Left" Height="23" Margin="130,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
-        <TextBox x:Name="TB_Winkel3" HorizontalAlignment="Left" Height="23" Margin="130,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
         <Label Content="Kraft F₁ in N:" HorizontalAlignment="Left" FontSize="12" Margin="20,53,0,0" VerticalAlignment="Top" Height="30" Width="105"/>
         <Label Content="Winkel F₁ in Grad:" HorizontalAlignment="Left" FontSize="12" Margin="20,84,0,0" VerticalAlignment="Top" Height="30" Width="105"/>
         <Label Content="Winkel F₂ in Grad:" HorizontalAlignment="Left" FontSize="12" Margin="20,112,0,0" VerticalAlignment="Top" Height="30" Width="105"/>
         <Label Content="Winkel F₃ in Grad:" HorizontalAlignment="Left" FontSize="12" Margin="20,140,0,0" VerticalAlignment="Top" Height="30" Width="105"/>
-        <Canvas x:Name="CV_Graph" HorizontalAlignment="Left" Height="315" Margin="255,10,0,0" VerticalAlignment="Top" Width="362"/>
+        <TextBox x:Name="TB_Kraft1" HorizontalAlignment="Left" Height="23" Margin="130,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="TB_Winkel1" HorizontalAlignment="Left" Height="23" Margin="130,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="TB_Winkel2" HorizontalAlignment="Left" Height="23" Margin="130,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="TB_Winkel3" HorizontalAlignment="Left" Height="23" Margin="130,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <Canvas x:Name="CV_Graph" Background="Gray" HorizontalAlignment="Left" Height="315" Margin="255,10,0,0" VerticalAlignment="Top" Width="362" MouseMove="CV_Graph_MouseMove"/>
+        <Label x:Name="L_Coords" Content="" Width="77" Margin="255,295,295,22" HorizontalAlignment="Center" VerticalAlignment="Center" Height="35"/>
         <Button Content="Berechnen" HorizontalAlignment="Left" Margin="20,175,0,0" VerticalAlignment="Top" Width="210" Height="30" Click="Button_Click"/>
-        <Label x:Name="L_Force1" Content="F₁:" HorizontalAlignment="Left" FontSize="14" Margin="20,225,0,0" VerticalAlignment="Top" Height="30" Width="210"/>
-        <Label x:Name="L_Force2" Content="F₂:" HorizontalAlignment="Left" FontSize="14" Margin="20,260,0,0" VerticalAlignment="Top" Height="30" Width="210"/>
-        <Label x:Name="L_Force3" Content="F₃:" HorizontalAlignment="Left" FontSize="14" Margin="20,295,0,0" VerticalAlignment="Top" Height="30" Width="210"/>
+        <Label x:Name="L_Force1" Content="F₁:" HorizontalAlignment="Left" Margin="20,225,0,0" VerticalAlignment="Top" Height="30" Width="210"/>
+        <Label x:Name="L_Force2" Content="F₂:" HorizontalAlignment="Left" Margin="20,260,0,0" VerticalAlignment="Top" Height="30" Width="210"/>
+        <Label x:Name="L_Force3" Content="F₃:" HorizontalAlignment="Left" Margin="20,295,0,0" VerticalAlignment="Top" Height="30" Width="210"/>
 
     </Grid>
 </Window>

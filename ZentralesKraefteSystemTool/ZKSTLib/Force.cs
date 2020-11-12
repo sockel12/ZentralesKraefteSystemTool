@@ -14,7 +14,10 @@ namespace ZKSTLib
 
         public override string ToString()
         {
-            return $"{force}N bei {angle} Grad";
+            force = Math.Round(force, 3);
+            angle = Math.Round(angle, 3);
+
+            return $"{Math.Abs(force)}N bei {Math.Abs(angle)} Grad";
         }
 
     }
