@@ -10,9 +10,9 @@ using System.Windows;
 [assembly: AssemblyTitle("ZentralesKraefteSystemTool")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Microsoft")]
+[assembly: AssemblyCompany("Benjamin Appel")]
 [assembly: AssemblyProduct("ZentralesKraefteSystemTool")]
-[assembly: AssemblyCopyright("Copyright © Microsoft 2020")]
+[assembly: AssemblyCopyright("Copyright © Benjamin Appel 2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
