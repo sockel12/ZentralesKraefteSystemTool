@@ -4,7 +4,7 @@
 //     Laufzeitversion: 4.0.30319.42000
 //
 //     Änderungen an dieser Datei können fehlerhaftes Verhalten verursachen und gehen verloren, wenn
-//     der Code neu generiert wird.
+//     der Code erneut generiert wird.
 // </auto-generated>
 //------------------------------------------------------------------------------
 

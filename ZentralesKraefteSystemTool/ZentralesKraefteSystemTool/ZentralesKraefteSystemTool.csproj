@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{00F541E9-3058-49DB-B8B6-E86D9902EEFB}</ProjectGuid>
+    <ProjectGuid>{572435AB-CFEB-4E88-96FA-18DA89EA3D42}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>ZentralesKraefteSystemTool</RootNamespace>
     <AssemblyName>ZentralesKraefteSystemTool</AssemblyName>
@@ -96,7 +96,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ZKSTLib\ZKSTLib.csproj">
-      <Project>{b86c6e57-c40f-4366-824e-169622fd1ec6}</Project>
+      <Project>{9f4a1c03-2cc4-493b-a05e-432ebb2b855f}</Project>
       <Name>ZKSTLib</Name>
     </ProjectReference>
   </ItemGroup>

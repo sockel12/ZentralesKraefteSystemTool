@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ZKSTLib
 {
@@ -28,7 +24,7 @@ namespace ZKSTLib
             //1: Winkel2 zu 0(360) drehen; 2: Winkel2 zu 180 drehen; 3: Winkel3 zu 0(360) drehen; 4: Winkel3 zu 180 drehen
             double[] systemAngle = CalcSystemAngle();
             angleTurn = systemAngle[1];
-            if(systemAngle[0] < 3)
+            if (systemAngle[0] < 3)
             {
                 onlyForce2X = false;
             }
@@ -36,21 +32,17 @@ namespace ZKSTLib
             {
                 onlyForce2X = true;
             }
-            Console.WriteLine(angleTurn);
-            Console.WriteLine($"{force1.angle + angleTurn}");
-            Console.WriteLine($"{angle2 + angleTurn}");
-            Console.WriteLine($"{angle3 + angleTurn}");
 
             f1x = force1.force * Math.Cos((Math.PI / 180) * (force1.angle + angleTurn));
             f1y = force1.force * Math.Sin((Math.PI / 180) * (force1.angle + angleTurn));
 
             if (!onlyForce2X)
             {
-                
+
                 f3y = -(f1y);
                 force3 = new Force(f3y / Math.Sin((Math.PI / 180) * (angle3 + angleTurn)), angle3);
                 f3x = force3.force * Math.Cos((Math.PI / 180) * (angle3 + angleTurn));
-                force2 = new Force(-f3x -f1x, angle2);
+                force2 = new Force(-f3x - f1x, angle2);
             }
             else
             {
@@ -64,7 +56,7 @@ namespace ZKSTLib
 
         private double[] CalcSystemAngle()
         {
-            double caseA;            
+            double caseA;
             double caseB;
             double caseC;
             double caseD;

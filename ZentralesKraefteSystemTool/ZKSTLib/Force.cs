@@ -14,7 +14,7 @@ namespace ZKSTLib
 
         public override string ToString()
         {
-            return $"{force}N at {angle} Degrees";
+            return $"{force}N bei {angle} Grad";
         }
 
     }

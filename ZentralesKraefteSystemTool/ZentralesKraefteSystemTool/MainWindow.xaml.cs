@@ -14,10 +14,8 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using ZKSTLib;
 
-
 namespace ZentralesKraefteSystemTool
 {
-    
     public partial class MainWindow : Window
     {
         public ZentralesKraefteSystem z;
@@ -51,7 +49,7 @@ namespace ZentralesKraefteSystemTool
             CV_Graph.Children.Add(startingLineY);
         }
 
-        
+
 
         public void ShowForces()
         {

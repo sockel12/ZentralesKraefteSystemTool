@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ZentralesKraefteSystemTool"
         mc:Ignorable="d"
-        Title="Zentrales Kraftsystem Tool by Benjamin Appel" Height="500" Width="1000" ResizeMode="NoResize">
+        Title="Zentrales Kraftsystem Tool by Benjamin Appel" Height="381" Width="633" ResizeMode="NoResize">
     <Grid>
         <Label Content="Zentrales Kraftsystem Tool" HorizontalAlignment="Left" FontSize="18" Margin="10,10,0,0" VerticalAlignment="Top" Height="30" Width="240" FontWeight="Bold"/>
         <TextBox x:Name="TB_Winkel1" HorizontalAlignment="Left" Height="23" Margin="130,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
@@ -16,8 +16,11 @@
         <Label Content="Winkel F₁ in Grad:" HorizontalAlignment="Left" FontSize="12" Margin="20,84,0,0" VerticalAlignment="Top" Height="30" Width="105"/>
         <Label Content="Winkel F₂ in Grad:" HorizontalAlignment="Left" FontSize="12" Margin="20,112,0,0" VerticalAlignment="Top" Height="30" Width="105"/>
         <Label Content="Winkel F₃ in Grad:" HorizontalAlignment="Left" FontSize="12" Margin="20,140,0,0" VerticalAlignment="Top" Height="30" Width="105"/>
-        <Canvas x:Name="CV_Graph" HorizontalAlignment="Left" Height="230" Margin="255,10,0,0" VerticalAlignment="Top" Width="210"/>
-        <Button Content="Berechnen" HorizontalAlignment="Left" Margin="20,210,0,0" VerticalAlignment="Top" Width="210" Height="30" Click="Button_Click"/>
+        <Canvas x:Name="CV_Graph" HorizontalAlignment="Left" Height="315" Margin="255,10,0,0" VerticalAlignment="Top" Width="362"/>
+        <Button Content="Berechnen" HorizontalAlignment="Left" Margin="20,175,0,0" VerticalAlignment="Top" Width="210" Height="30" Click="Button_Click"/>
+        <Label x:Name="L_Force1" Content="F₁:" HorizontalAlignment="Left" FontSize="14" Margin="20,225,0,0" VerticalAlignment="Top" Height="30" Width="210"/>
+        <Label x:Name="L_Force2" Content="F₂:" HorizontalAlignment="Left" FontSize="14" Margin="20,260,0,0" VerticalAlignment="Top" Height="30" Width="210"/>
+        <Label x:Name="L_Force3" Content="F₃:" HorizontalAlignment="Left" FontSize="14" Margin="20,295,0,0" VerticalAlignment="Top" Height="30" Width="210"/>
 
     </Grid>
 </Window>
